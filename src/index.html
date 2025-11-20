@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Karen Gisel López Ordoñez</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          class="profile"
+          src="assets/img/profile.jpeg"
+          alt="Karen Gisel López Ordoñez"
+          width="200"
+          height="200"
+        />
+        <h1>Contáctame</h1>
+      </header>
+
+      <section class="about-section">
+        <p class="about-greeting">Hola, soy Karen Gisel López Ordoñez</p>
+        <p class="about-description">
+          Soy una Junior Frontend Developer 🤓. Actualmente, estoy formandome
+          como ingeniera informática en 8 semestre 👩‍💻
+        </p>
+      </section>
+
+      <main class="content-wrapper">
+        <section class="form-section" aria-labelledby="form-heading">
+          <h2 id="form-heading">Envíame un mensaje</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Tu nombre completo"
+                aria-required="true"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                aria-required="true"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Escribe tu mensaje aquí..."
+                aria-required="true"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit">Enviar Mensaje</button>
+          </form>
+        </section>
+
+        <aside class="info-section" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Información de Contacto</h2>
+
+          <address class="contact-info">
+            <div class="contact-item">
+              <strong>📧 Email:</strong>
+              <a
+                href="mailto:karenglopez1020@gmail.com"
+                style="color: #667eea; text-decoration: none"
+                >karenglopez1020@gmail.com</a
+              >
+            </div>
+
+            <div class="contact-item">
+              <strong>📱 Teléfono:</strong>
+              <a href="tel:+573157080769">+57 315 708 0769</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>📍 Dirección:</strong>
+              <span>Santiago de Cali, Colombia</span>
+            </div>
+          </address>
+
+          <section aria-labelledby="location-heading">
+            <h2 id="location-heading" style="margin-top: 30px">Ubicación</h2>
+            <figure class="map-container">
+              <img
+                id="mapImage"
+                src="assets/img/map-placeholder.png"
+                alt="Mapa mostrando la ubicación en Santiago de Cali, Colombia"
+                style="cursor: pointer"
+                title="Click para ampliar"
+              />
+            </figure>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-icon">✓</div>
+        <h3>¡Mensaje Enviado!</h3>
+        <p id="modalMessage"></p>
+        <button id="closeModal" class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="imageLightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightboxImage" class="lightbox-content" alt="Mapa ampliado" />
+    </div>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
