@@ -23,16 +23,14 @@ Página de contacto personal desarrollada con HTML, CSS y JavaScript vanilla. Di
 
 ```
 Contact_Page/
-├── src/
-│   ├── index.html
-│   ├── assets/
-│   │   ├── css/
-│   │   │   └── styles.css
-│   │   ├── js/
-│   │   │   └── index.js
-│   │   └── img/
-│   │       ├── profile.jpeg
-│   │       └── map-placeholder.png
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── index.js
+├── img/
+│   ├── profile.jpeg
+│   └── map-placeholder.png
 └── README.md
 ```
 
@@ -44,7 +42,7 @@ Contact_Page/
 git clone https://github.com/gisellopez1020/Contact_Page.git
 ```
 
-2. Abre el archivo `src/index.html` en tu navegador
+2. Abre el archivo `index.html` en tu navegador
 
 No se requiere instalación de dependencias ni servidor local.
 
